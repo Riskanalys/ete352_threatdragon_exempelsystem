@@ -777,58 +777,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Hanterar",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "1d5eca08-5bbd-4186-8a18-85bfe948c555",
-                  "status": "",
-                  "severity": "",
-                  "title": "",
-                  "type": "",
-                  "description": "",
-                  "mitigation": "",
-                  "modelType": ""
-                }
-              ],
-              "isTrustBoundary": false
-            },
-            "id": "840f02cd-412f-4cd2-a28b-e19bbccca364",
-            "labels": [
-              "Hanterar"
-            ],
-            "source": {
-              "cell": "2416816b-0715-46f0-9c2c-6af4ad269c36"
-            },
-            "target": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Kunduppgifter",
               "description": "",
               "outOfScope": false,
@@ -1001,6 +949,57 @@
             },
             "target": {
               "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hanterar",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "5df4855a-9a0a-4287-b95b-46b8937792cd",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Changed user privileges",
+                  "type": "Availability",
+                  "description": "By spoofing a system administrators privileges an attacker could remove other user privileged making the system unaccessible for the organisation. ",
+                  "mitigation": "Implement two-factor authentication and password policy. Limit the number of high level roles and users. Keep data separated from software in case system needs to be rebuilt from scratch. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "840f02cd-412f-4cd2-a28b-e19bbccca364",
+            "labels": [
+              "Hanterar"
+            ],
+            "source": {
+              "cell": "2416816b-0715-46f0-9c2c-6af4ad269c36"
+            },
+            "target": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
             },
             "vertices": []
           },
