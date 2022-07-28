@@ -377,54 +377,6 @@
               "threats": [],
               "isTrustBoundary": false
             },
-            "id": "907a36cd-2b8d-4561-85d4-b66b5d279a92",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": ""
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "target": {
-              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
             "id": "c85d1634-59fe-4713-82f0-137570741fb8",
             "labels": [
               {
@@ -860,58 +812,6 @@
             "vertices": []
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Kunduppgifter",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "7bad78d0-43f0-4ad9-87e0-fe899956cfa1",
-                  "status": "",
-                  "severity": "",
-                  "title": "",
-                  "type": "",
-                  "description": "",
-                  "mitigation": "",
-                  "modelType": ""
-                }
-              ],
-              "isTrustBoundary": false
-            },
-            "id": "343e0580-8536-42a5-97d5-3bd1bc6bb468",
-            "labels": [
-              "Kunduppgifter"
-            ],
-            "source": {
-              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
-            },
-            "target": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-broundary-curve",
             "attrs": {
               "line": {
@@ -1008,6 +908,99 @@
             },
             "target": {
               "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Kunduppgifter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "7bad78d0-43f0-4ad9-87e0-fe899956cfa1",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Customer information snooping",
+                  "type": "Confidentiality",
+                  "description": "Although information retrieved from Skatteverket is mainly public a competitor may gain advantage if they have knowledge about the organisation's clients. ",
+                  "mitigation": "Secure connection (certification) to Skatteverket's server. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "343e0580-8536-42a5-97d5-3bd1bc6bb468",
+            "labels": [
+              "Kunduppgifter"
+            ],
+            "source": {
+              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
+            },
+            "target": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isTrustBoundary": false
+            },
+            "id": "907a36cd-2b8d-4561-85d4-b66b5d279a92",
+            "labels": [
+              ""
+            ],
+            "source": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "target": {
+              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
             },
             "vertices": []
           },
@@ -1117,7 +1110,18 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "991467df-019e-4642-b9ef-80b6d8ba73af",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "title": "Blocked invoicing",
+                  "type": "Availability",
+                  "description": "If an attacker can block the invoicing system cash flow could potentially be hurt, apart from the administrative costs of restoring and rebuilding the system. ",
+                  "mitigation": "Continuous system monitoring and patching. Option exists to send out physical invoices in case of longer system downtime. Backups of invoicing history. ",
+                  "modelType": "CIA"
+                }
+              ],
               "hasOpenThreats": false
             }
           },
