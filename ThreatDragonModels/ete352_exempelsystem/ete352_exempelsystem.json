@@ -712,58 +712,6 @@
             "vertices": []
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Åtkomst",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "685c5680-a84e-4ff9-9c44-93b87d8a38bb",
-                  "status": "Mitigated",
-                  "severity": "Low",
-                  "title": "Secure data transfer",
-                  "type": "Confidentiality",
-                  "description": "Communication between cloud to server uses the internet and leaves the communication open for interception. ",
-                  "mitigation": "Data transfer uses encryption. ",
-                  "modelType": "CIA"
-                }
-              ],
-              "isTrustBoundary": false
-            },
-            "id": "907bfcce-b041-444a-909b-24a228f43c76",
-            "labels": [
-              "Åtkomst"
-            ],
-            "source": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "target": {
-              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-broundary-curve",
             "attrs": {
               "line": {
@@ -1001,6 +949,58 @@
             },
             "target": {
               "cell": "b216d5f2-f9ac-44cc-b014-dd67f37614e7"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Åtkomst",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "685c5680-a84e-4ff9-9c44-93b87d8a38bb",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Secure data transfer",
+                  "type": "Confidentiality",
+                  "description": "Communication between cloud to server uses the internet and leaves the communication open for interception. ",
+                  "mitigation": "Data transfer uses encryption. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "907bfcce-b041-444a-909b-24a228f43c76",
+            "labels": [
+              "Åtkomst"
+            ],
+            "source": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "target": {
+              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
             },
             "vertices": []
           },
