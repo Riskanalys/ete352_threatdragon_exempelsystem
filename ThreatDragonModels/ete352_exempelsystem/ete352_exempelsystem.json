@@ -28,11 +28,13 @@
                 "text": "Databas"
               },
               "topLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -56,9 +58,19 @@
                   "description": "Customer database is subject for possible ransomware attack with the possible effect that the information becomes unaccessible for the organisation. ",
                   "mitigation": "Backup systems (daily), continuous system maintenance, firewalls, limited virtual and physical access. ",
                   "modelType": "CIA"
+                },
+                {
+                  "id": "2ec0143c-76e0-41cd-b389-3c2a7f166098",
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Backdoors and unknown data integration services",
+                  "type": "Confidentiality",
+                  "description": "Unknown data sharing services in the software or pre-installed backdoors could leave the system open for possible attacks that could expose the content of the database. ",
+                  "mitigation": "Administrators need to increase their knowledge of the system through documentation and continuous dialogue with the software provider. Network segmentation and traffic filtering. ",
+                  "modelType": "CIA"
                 }
               ],
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": true,
               "storesCredentials": true,
               "isEncrypted": false,
@@ -68,7 +80,7 @@
           {
             "position": {
               "x": 840,
-              "y": 40
+              "y": 30
             },
             "size": {
               "width": 160,
@@ -94,7 +106,18 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "0144f80b-2ba6-4e08-b6de-7dc2bf4ed562",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "title": "Abuse of high privileges ",
+                  "type": "Integrity",
+                  "description": "A user with high privileges could use that access to tamper with the information in the system. ",
+                  "mitigation": "Limited number of individuals given higher privileges. Vetting of all employees given high level roles in the systems. Active and structured management of users and privileges. Strict user roles policy. ",
+                  "modelType": "CIA"
+                }
+              ],
               "hasOpenThreats": false,
               "providesAuthentication": false
             }
@@ -178,54 +201,6 @@
             },
             "target": {
               "cell": "b216d5f2-f9ac-44cc-b014-dd67f37614e7"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Hanterar",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "840f02cd-412f-4cd2-a28b-e19bbccca364",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Hanterar"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "2416816b-0715-46f0-9c2c-6af4ad269c36"
-            },
-            "target": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
             },
             "vertices": []
           },
@@ -985,6 +960,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hanterar",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "1d5eca08-5bbd-4186-8a18-85bfe948c555",
+                  "status": "",
+                  "severity": "",
+                  "title": "",
+                  "type": "",
+                  "description": "",
+                  "mitigation": "",
+                  "modelType": ""
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "840f02cd-412f-4cd2-a28b-e19bbccca364",
+            "labels": [
+              "Hanterar"
+            ],
+            "source": {
+              "cell": "2416816b-0715-46f0-9c2c-6af4ad269c36"
+            },
+            "target": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 139,
               "y": 140
@@ -998,8 +1025,8 @@
                 "text": "Molntjänst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1013,8 +1040,19 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false
+              "threats": [
+                {
+                  "id": "9c513d4c-a76a-4a8a-82ce-0c05ed7b2b9b",
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Compromised authentication process",
+                  "type": "Confidentiality",
+                  "description": "Cloud based authentication service could be compromised opening up for an attacker to log into the system remotely. ",
+                  "mitigation": "Establish adequate security standards through detailed SLAs. Regular audits of the cloud services. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "hasOpenThreats": true
             }
           },
           {
