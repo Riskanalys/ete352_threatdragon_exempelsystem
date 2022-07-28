@@ -46,7 +46,18 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "b56ba28c-79d9-4832-859a-bc3de01bbc55",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "Ransomware attack",
+                  "type": "Availability",
+                  "description": "Customer database is subject for possible ransomware attack with the possible effect that the information becomes unaccessible for the organisation. ",
+                  "mitigation": "Backup systems (daily), continuous system maintenance, firewalls, limited virtual and physical access. ",
+                  "modelType": "CIA"
+                }
+              ],
               "hasOpenThreats": false,
               "isALog": true,
               "storesCredentials": true,
@@ -90,8 +101,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 480
+              "x": 390,
+              "y": 500
             },
             "size": {
               "width": 160,
@@ -359,54 +370,6 @@
             },
             "target": {
               "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "907bfcce-b041-444a-909b-24a228f43c76",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": ""
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "target": {
-              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
             },
             "vertices": []
           },
@@ -747,102 +710,6 @@
             "vertices": []
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Autentiserar",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "585ae9ea-1ede-4f69-8175-b1bbd6edffd6",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Autentiserar"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
-            },
-            "target": {
-              "cell": "fd1a81db-67dc-453a-8081-8cd529680112"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Kunduppgifter",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "343e0580-8536-42a5-97d5-3bd1bc6bb468",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Kunduppgifter"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
-            },
-            "target": {
-              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-broundary-curve",
             "attrs": {
               "line": {
@@ -855,13 +722,7 @@
             "zIndex": 10,
             "connector": "smooth",
             "labels": [
-              {
-                "attrs": {
-                  "text": {
-                    "text": ""
-                  }
-                }
-              }
+              ""
             ],
             "data": {
               "type": "tm.Boundary",
@@ -927,6 +788,199 @@
               {
                 "x": 610,
                 "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Autentiserar",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isTrustBoundary": false
+            },
+            "id": "585ae9ea-1ede-4f69-8175-b1bbd6edffd6",
+            "labels": [
+              "Autentiserar"
+            ],
+            "source": {
+              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
+            },
+            "target": {
+              "cell": "fd1a81db-67dc-453a-8081-8cd529680112"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Åtkomst",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "685c5680-a84e-4ff9-9c44-93b87d8a38bb",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Secure data transfer",
+                  "type": "Confidentiality",
+                  "description": "Communication between cloud to server uses the internet and leaves the communication open for interception. ",
+                  "mitigation": "Data transfer uses encryption. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "907bfcce-b041-444a-909b-24a228f43c76",
+            "labels": [
+              "Åtkomst"
+            ],
+            "source": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "target": {
+              "cell": "8438e351-6a23-417a-b64d-7af55bf10670"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Kunduppgifter",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "7bad78d0-43f0-4ad9-87e0-fe899956cfa1",
+                  "status": "",
+                  "severity": "",
+                  "title": "",
+                  "type": "",
+                  "description": "",
+                  "mitigation": "",
+                  "modelType": ""
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "343e0580-8536-42a5-97d5-3bd1bc6bb468",
+            "labels": [
+              "Kunduppgifter"
+            ],
+            "source": {
+              "cell": "0227b179-35c2-42f9-ac39-3f0f2cc4ac58"
+            },
+            "target": {
+              "cell": "8884e768-7353-4e0a-ac85-8779e5c912ae"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "32f68356-c845-40dc-821a-6e46b3c275a7",
+            "source": {
+              "x": 400,
+              "y": 90
+            },
+            "target": {
+              "x": 970,
+              "y": 570
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 420
+              },
+              {
+                "x": 770,
+                "y": 540
               }
             ]
           },
@@ -1043,8 +1097,8 @@
                 "text": "Extern enhet"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1058,8 +1112,19 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "7b3bf08d-32ed-4981-aa47-1e9771bb0af6",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Unauthorized use of unit",
+                  "type": "Integrity",
+                  "description": "Attacker can gain access to hardware unit to tamper with information in the system. ",
+                  "mitigation": "Two factor authentication and enforcing policy on handling of hardware. Educate users on how to protect information and the importance of data security. Prevent access to critical sub processes från external units. ",
+                  "modelType": "CIA"
+                }
+              ],
+              "hasOpenThreats": true,
               "providesAuthentication": false
             }
           },
@@ -1092,7 +1157,18 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "bec350d7-0911-466f-88f5-e6cc63eb1415",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "title": "Unauthorized use of access privileges",
+                  "type": "Integrity",
+                  "description": "Users given certain access rights can manipulate customer and invoice handling for customer or personal benefits. ",
+                  "mitigation": "Logging and two-step approval for customer creation and invoice handling. ",
+                  "modelType": "CIA"
+                }
+              ],
               "hasOpenThreats": false,
               "providesAuthentication": false
             }
